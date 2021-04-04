@@ -20,4 +20,10 @@ public class TestRepoHealthController {
 		return ResponseEntity.ok("{ \"application\":\"test-repo\",\"status\":\"success\"} ");
 	}
 
+	@RequestMapping(value = "/statustwo", method = RequestMethod.GET, produces = "application/json")
+	public ResponseEntity<?> statusTwo() {
+		logger.debug("Enters on method status in TestRepoHealthController : ");
+		return ResponseEntity.ok("{ \"application\":\"test-repo\",\"status\":\"success\"} ");
+	}
+
 }
